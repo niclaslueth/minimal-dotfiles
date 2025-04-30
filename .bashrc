@@ -2,5 +2,5 @@
 # Seems to be the only way to make zsh the correct shell
 # See: https://askubuntu.com/a/1292415
 export SHELL=`which zsh`
-zsh
-exit
+#zsh
+#exit
