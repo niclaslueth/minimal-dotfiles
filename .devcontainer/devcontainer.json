@@ -1,0 +1,11 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {},
+    "ghcr.io/devcontainers-extra/features/vscode-server:1": {},
+    "ghcr.io/devcontainers-extra/features/fzf:1": {},
+    "ghcr.io/jpawlowski/devcontainer-features/codespaces-dotfiles:1": {
+      "repository": "https://github.com/niclaslueth/minimal-dotfiles"
+    }
+  }
+}
