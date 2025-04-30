@@ -1,5 +1,5 @@
 #!/bin/bash
-#sudo apt update
+sudo apt update
 sudo apt install zsh git curl stow fzf -y
 
 # Oh My Zsh
@@ -20,11 +20,7 @@ git clone https://github.com/unixorn/fzf-zsh-plugin.git \
   ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fzf-zsh-plugin
 
 # Dotfiles anwenden
-cp .zshrc ~
-cp .bashrc ~
-cp -R .fzf ~
-cd ~
-stow .fzf 
+stow . -t ~ 
 
 source ~/.bashrc
 
