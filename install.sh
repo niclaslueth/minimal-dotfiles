@@ -20,7 +20,7 @@ git clone https://github.com/unixorn/fzf-zsh-plugin.git \
   ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fzf-zsh-plugin
 
 # Dotfiles anwenden
-stow . -t ~ 
-
+stow . -t ~ --adopt --ignore=install.sh
+git restore .
 source ~/.bashrc
 
