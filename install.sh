@@ -20,6 +20,8 @@ git clone https://github.com/unixorn/fzf-zsh-plugin.git \
   ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fzf-zsh-plugin
 
 # Dotfiles anwenden
+cp .zshrc ~
+cp .bashrc ~
 cp -R .fzf ~
 cd ~
 stow .fzf 
