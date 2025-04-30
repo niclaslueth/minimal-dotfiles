@@ -1,7 +1,6 @@
 #!/bin/bash
 sudo apt update
 sudo apt install zsh git curl fzf -y
-chsh -s $(which zsh)
 
 # Oh My Zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -22,4 +21,5 @@ git clone https://github.com/unixorn/fzf-zsh-plugin.git \
 
 # Dotfiles anwenden
 cp .zshrc ~/
+cp .bashrc ~/
 
